@@ -8,6 +8,8 @@ Infomaniak public cloud service.
 [https://www.infomaniak.com/en/hosting/public-cloud](https://www.infomaniak.com/en/hosting/public-cloud)
 [https://opnsense.org/](https://opnsense.org/)
 
+![diagram](diagram.png)
+
 ## Description
 
 VMs like [vm-basic](vm-basic.tf) are in a self service private network
