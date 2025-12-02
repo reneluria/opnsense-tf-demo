@@ -2,3 +2,4 @@
 terraform.*
 sshkey*
 clouds.yaml
+*openrc.txt
