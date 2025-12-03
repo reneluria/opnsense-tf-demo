@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) 2024 demo-opensense contributors
+# Copyright (C) 2025 demo-opensense contributors
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
