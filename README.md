@@ -43,13 +43,7 @@ login is root, [and password to get here](https://docs.infomaniak.cloud/tutorial
 
 ### Retrieve the OPNsense password
 
-Using nova CLI:
-
-```shell
-nova get-password opnsense sshkey
-```
-
-Or using Python (requires installing dependencies first):
+Using Python (requires installing dependencies first):
 
 ```shell
 pip install -r requirements.txt
@@ -61,6 +55,14 @@ Or for any instance:
 ```shell
 python get_instance_password.py <instance_name> <private_key_path> [--cloud <cloud_name>]
 ```
+
+Or using nova CLI (with OS_* variables):
+
+```shell
+nova get-password opnsense sshkey
+```
+
+## Setup OPNsense for VPN and all
 
 Setup the Wireguard in vpn/wireguard and appropriate rules
 
@@ -109,7 +111,7 @@ Setup the Wireguard in vpn/wireguard and appropriate rules
   description: WG-EXT
 
 * Go to Firewall / Rules / WAN
-  Add rule, Protocol TCP/UDP, destination "This Firewall", Destination port range, to: (other), 
+  Add rule, Protocol TCP/UDP, destination "This Firewall", Destination port range, to: (other),
   description: allow inbound connections to wireguard server
 
 * Go to Firewall / Rules / WGEXT
