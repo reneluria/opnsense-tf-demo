@@ -41,8 +41,25 @@ Once setup, you have a working OPNsense instance and a local VM
 To access the OPNsense get ip from outputs (opnsense_ip) and open your browser
 login is root, [and password to get here](https://docs.infomaniak.cloud/tutorials/firewall/opnsense/#retrieve-administrator-password)
 
+### Retrieve the OPNsense password
+
+Using nova CLI:
+
 ```shell
 nova get-password opnsense sshkey
+```
+
+Or using Python (requires installing dependencies first):
+
+```shell
+pip install -r requirements.txt
+python get_opnsense_password.py
+```
+
+Or for any instance:
+
+```shell
+python get_instance_password.py <instance_name> <private_key_path> [--cloud <cloud_name>]
 ```
 
 Setup the Wireguard in vpn/wireguard and appropriate rules

@@ -3,3 +3,4 @@ terraform.*
 sshkey*
 clouds.yaml
 *openrc.txt
+__pycache__
